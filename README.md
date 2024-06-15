@@ -1,8 +1,8 @@
-# React + Vite
+This is a fun and engaging React Web Application  aimed at young art enthusists! 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To see a live view locally http://localhost:5173/
 
-Currently, two official plugins are available:
+It utilizes the open API provided by The Art Institute of Chicago (https://api.artic.edu/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://www.artic.edu/
+

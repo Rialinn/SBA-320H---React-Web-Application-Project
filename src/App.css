@@ -1,42 +1,203 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  padding: 1rem;
   text-align: center;
+  font-family: "Athiti", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Navbar Styles */
+nav {
+  background-color: #bbe1fb;
+  color: #333030;
+  padding: 20px;
+  display: flex;
+  justify-content: end; 
+  align-items: center; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav #about {
+  background-color: yellow; 
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+nav ul li {
+  display: inline;
+  margin-right: 18px;
 }
 
-.read-the-docs {
-  color: #888;
+nav ul li a {
+  text-decoration: none;
+  color: #3f0f0f;
+}
+
+/* Toggle btn */
+.toggle-btn {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: #555555;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .h3Dark {
+  color: #bbe1fb;
+}
+
+.dark-mode .h2AboutArt {
+  color: #bbe1fb;
+}
+
+
+/* MainPage Styles */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.artworks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+
+/* ArtworkCard Styles */
+.artwork-card {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 18px;
+  background-color: rgba(167, 180, 184, 0.146);
+}
+
+.artwork-card h3 {
+  margin-top: 0;
+}
+
+/* Carousel.css */
+
+/* Slider container */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.h2AboutArt {
+  background-color: yellow;
+  padding: 10px;
+}
+
+.h2Carousel {
+  background-color: rgba(246, 174, 19, 0.299);
+  padding: 10px;
+}
+
+
+/* Individual slides */
+.slick-slide {
+  float: left;
+  min-height: 1px;
+  display: none;
+}
+
+.slick-slide img {
+  width: 350px; 
+  height: 350px; 
+  object-fit: contain ;
+}
+
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background-color: rgba(246, 174, 19, 0.698);
+}
+
+
+input {
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 0.5px solid #bbe1fb;
+  margin-top: 60px;
+}
+
+#searchBtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: yellow; 
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 0.5px solid #bbe1fb;
+  margin-top: 60px;
+}
+
+#searchBtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: yellow; 
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+li {
+  list-style: none;
+  color: rgb(241, 134, 98);
 }
